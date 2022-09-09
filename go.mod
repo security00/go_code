@@ -19,7 +19,6 @@ require (
 	github.com/mattn/go-sqlite3 v1.10.0 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/sirupsen/logrus v1.8.1
-	github.com/soheilhy/cmux v0.1.5
 	github.com/syndtr/goleveldb v1.0.0 // indirect
 	github.com/tealeg/xlsx v1.0.5 // indirect
 	github.com/ugorji/go v1.2.6 // indirect

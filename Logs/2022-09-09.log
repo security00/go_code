@@ -1,0 +1,56 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+{"level":"info","msg":"","request":{"all_time":123666,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/","status_code":404},"response":"","time":"2022-09-09 15:26:43"}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":132166,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/goods","status_code":200},"response":"{\"goodId\":\"0\"}","time":"2022-09-09 18:00:11"}
+{"level":"info","msg":"","request":{"all_time":5542,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/favicon.ico","status_code":404},"response":"","time":"2022-09-09 18:00:11"}
+{"level":"info","msg":"","request":{"all_time":4042,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/index/username?id=1","status_code":404},"response":"","time":"2022-09-09 18:03:26"}

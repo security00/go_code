@@ -7,16 +7,15 @@ import (
 )
 
 type IndexController struct {
-
 }
 
-func (i *IndexController) Index(c *gin.Context)  {
+func (i *IndexController) Index(c *gin.Context) {
 	var json Requests.Login
-	if err := c.ShouldBindJSON(&json); err != nil{
-		c.JSON(http.StatusOK,gin.H{"error" : err.Error()})
+	if err := c.ShouldBindJSON(&json); err != nil {
+		c.JSON(http.StatusOK, gin.H{"error": err.Error()})
 		return
 	}
-	c.JSON(http.StatusOK,gin.H{"user":json.User,"passwork": json.Pssword})
+	c.JSON(http.StatusOK, gin.H{"user": json.User, "passwork": json.Pssword})
 }
 
 func (i *IndexController) ResponseStruct(c *gin.Context) {
@@ -39,3 +38,7 @@ func (i *IndexController) ResponseYaml(c *gin.Context) {
 	c.YAML(200, gin.H{"name": "zhangsan"})
 }
 
+func (i *IndexController) UserName(c *gin.Context) {
+	//id := c.GetInt("id")
+
+}
