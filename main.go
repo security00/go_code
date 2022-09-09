@@ -2,18 +2,21 @@ package main
 
 import (
 	"fmt"
-	"sync"
+	_ "mygo/Configs"
+	"mygo/Lib/Routers"
+	"mygo/Lib/Routers/Common"
+	"mygo/Lib/Routers/Goods"
+	"mygo/Lib/Routers/Orders"
 )
 
 func main() {
-	var wg sync.WaitGroup
+	// 加载多个APP的路由配置
+	Routers.Include(Goods.Routers, Orders.Routers, Common.Routers)
 
-	for _, salutation := range []string{"hello", "greetings", "good day"} {
-		wg.Add(1)
-		go func(str string) {
-			defer wg.Done()
-			fmt.Println(str)
-		}(salutation)
+	// 初始化路由
+	r := Routers.Init()
+	if err := r.Run(); err != nil {
+		fmt.Printf("startup service failed, err: %v \n", err)
 	}
-	wg.Wait()
+
 }

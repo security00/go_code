@@ -1,0 +1,332 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[qSkipTool]2021/10/27 08:55:33 GoodsForOmoCourseControllor.go:20: GoodsForOmoCourseControllor log
+time="2021-10-27T16:55:33+08:00" level=info msg="GoodsForOmoCourseControllor logrus"
+{"all_time":34953542,"client_ip":"127.0.0.1","json":{},"level":"info","msg":"","req_method":"POST","req_url":"/relation","status_code":200,"time":"2021-10-27 16:55:34"}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+aaaaaaaaaaaaaaaaaaaa[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[qSkipTool]2021/10/27 09:13:44 GoodsForOmoCourseControllor.go:20: GoodsForOmoCourseControllor log
+time="2021-10-27T17:13:44+08:00" level=info msg="GoodsForOmoCourseControllor logrus"
+{"all_time":50662208,"client_ip":"127.0.0.1","level":"info","msg":"","raw2":"","req_method":"POST","req_url":"/relation","status_code":200,"time":"2021-10-27 17:13:45"}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[qSkipTool]2021/10/27 11:47:32 GoodsForOmoCourseControllor.go:20: GoodsForOmoCourseControllor log
+time="2021-10-27T19:47:32+08:00" level=info msg="GoodsForOmoCourseControllor logrus"
+{"cost_time":35435542,"request_client_ip":"127.0.0.1","request_method":"POST","request_post_data":"","request_proto":"HTTP/1.1","request_referer":"","request_time":"2021-10-27T19:47:32.375435+08:00","request_ua":"Apache-HttpClient/4.5.13 (Java/11.0.11)","request_uri":"/relation","response_code":0,"response_data":null,"response_msg":"","response_time":"2021-10-27T19:47:32.410869+08:00"}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- index.tmpl
+	- 
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[qSkipTool]2021/10/27 11:49:27 GoodsForOmoCourseControllor.go:20: GoodsForOmoCourseControllor log
+time="2021-10-27T19:49:27+08:00" level=info msg="GoodsForOmoCourseControllor logrus"
+[qSkipTool]2021/10/27 11:49:27 server.go:3119: http: panic serving 127.0.0.1:52338: runtime error: invalid memory address or nil pointer dereference
+goroutine 6 [running]:
+net/http.(*conn).serve.func1(0x140004860a0)
+	/opt/homebrew/Cellar/go@1.16/1.16.9/libexec/src/net/http/server.go:1804 +0x108
+panic(0x100870b20, 0x100d6fcb0)
+	/opt/homebrew/Cellar/go@1.16/1.16.9/libexec/src/runtime/panic.go:971 +0x3f4
+mygo/Lib/MiddleWares/Global.SetUp.func1(0x140004a4100)
+	/Users/xizhanbo/data/go/mygo/Lib/MiddleWares/Global/logger.go:60 +0xad8
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/xizhanbo/data/go/mygo/vendor/github.com/gin-gonic/gin/context.go:165
+mygo/Lib/MiddleWares/Global.CommonMiddleWare.func1(0x140004a4100)
+	/Users/xizhanbo/data/go/mygo/Lib/MiddleWares/Global/Common.go:11 +0x94
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/xizhanbo/data/go/mygo/vendor/github.com/gin-gonic/gin/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0x1400048c000, 0x140004a4100)
+	/Users/xizhanbo/data/go/mygo/vendor/github.com/gin-gonic/gin/gin.go:489 +0x1ec
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0x1400048c000, 0x10095b490, 0x1400048a1c0, 0x140004a4000)
+	/Users/xizhanbo/data/go/mygo/vendor/github.com/gin-gonic/gin/gin.go:445 +0x10c
+net/http.serverHandler.ServeHTTP(0x1400048a0e0, 0x10095b490, 0x1400048a1c0, 0x140004a4000)
+	/opt/homebrew/Cellar/go@1.16/1.16.9/libexec/src/net/http/server.go:2867 +0xbc
+net/http.(*conn).serve(0x140004860a0, 0x10095d920, 0x14000032280)
+	/opt/homebrew/Cellar/go@1.16/1.16.9/libexec/src/net/http/server.go:1932 +0x710
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go@1.16/1.16.9/libexec/src/net/http/server.go:2993 +0x308
+[qSkipTool]2021/10/27 11:49:30 GoodsForOmoCourseControllor.go:20: GoodsForOmoCourseControllor log
+time="2021-10-27T19:49:30+08:00" level=info msg="GoodsForOmoCourseControllor logrus"
+[qSkipTool]2021/10/27 11:49:30 server.go:3119: http: panic serving 127.0.0.1:52360: runtime error: invalid memory address or nil pointer dereference
+goroutine 11 [running]:
+net/http.(*conn).serve.func1(0x14000486140)
+	/opt/homebrew/Cellar/go@1.16/1.16.9/libexec/src/net/http/server.go:1804 +0x108
+panic(0x100870b20, 0x100d6fcb0)
+	/opt/homebrew/Cellar/go@1.16/1.16.9/libexec/src/runtime/panic.go:971 +0x3f4
+mygo/Lib/MiddleWares/Global.SetUp.func1(0x140000a2100)
+	/Users/xizhanbo/data/go/mygo/Lib/MiddleWares/Global/logger.go:60 +0xad8
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/xizhanbo/data/go/mygo/vendor/github.com/gin-gonic/gin/context.go:165
+mygo/Lib/MiddleWares/Global.CommonMiddleWare.func1(0x140000a2100)
+	/Users/xizhanbo/data/go/mygo/Lib/MiddleWares/Global/Common.go:11 +0x94
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/xizhanbo/data/go/mygo/vendor/github.com/gin-gonic/gin/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0x1400048c000, 0x140000a2100)
+	/Users/xizhanbo/data/go/mygo/vendor/github.com/gin-gonic/gin/gin.go:489 +0x1ec
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0x1400048c000, 0x10095b490, 0x1400048a1c0, 0x140000a2200)
+	/Users/xizhanbo/data/go/mygo/vendor/github.com/gin-gonic/gin/gin.go:445 +0x10c
+net/http.serverHandler.ServeHTTP(0x1400048a0e0, 0x10095b490, 0x1400048a1c0, 0x140000a2200)
+	/opt/homebrew/Cellar/go@1.16/1.16.9/libexec/src/net/http/server.go:2867 +0xbc
+net/http.(*conn).serve(0x14000486140, 0x10095d920, 0x1400009a100)
+	/opt/homebrew/Cellar/go@1.16/1.16.9/libexec/src/net/http/server.go:1932 +0x710
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go@1.16/1.16.9/libexec/src/net/http/server.go:2993 +0x308
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[qSkipTool]2021/10/27 11:53:25 GoodsForOmoCourseControllor.go:20: GoodsForOmoCourseControllor log
+time="2021-10-27T19:53:25+08:00" level=info msg="GoodsForOmoCourseControllor logrus"
+[qSkipTool]2021/10/27 11:53:25 server.go:3119: http: panic serving 127.0.0.1:53991: runtime error: invalid memory address or nil pointer dereference
+goroutine 12 [running]:
+net/http.(*conn).serve.func1(0x140004860a0)
+	/opt/homebrew/Cellar/go@1.16/1.16.9/libexec/src/net/http/server.go:1804 +0x108
+panic(0x100870b20, 0x100d6fcb0)
+	/opt/homebrew/Cellar/go@1.16/1.16.9/libexec/src/runtime/panic.go:971 +0x3f4
+mygo/Lib/MiddleWares/Global.SetUp.func1(0x140004a4100)
+	/Users/xizhanbo/data/go/mygo/Lib/MiddleWares/Global/logger.go:60 +0xad8
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/xizhanbo/data/go/mygo/vendor/github.com/gin-gonic/gin/context.go:165
+mygo/Lib/MiddleWares/Global.CommonMiddleWare.func1(0x140004a4100)
+	/Users/xizhanbo/data/go/mygo/Lib/MiddleWares/Global/Common.go:11 +0x94
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/xizhanbo/data/go/mygo/vendor/github.com/gin-gonic/gin/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0x1400048c000, 0x140004a4100)
+	/Users/xizhanbo/data/go/mygo/vendor/github.com/gin-gonic/gin/gin.go:489 +0x1ec
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0x1400048c000, 0x10095b490, 0x1400048a1c0, 0x140004a4000)
+	/Users/xizhanbo/data/go/mygo/vendor/github.com/gin-gonic/gin/gin.go:445 +0x10c
+net/http.serverHandler.ServeHTTP(0x1400048a0e0, 0x10095b490, 0x1400048a1c0, 0x140004a4000)
+	/opt/homebrew/Cellar/go@1.16/1.16.9/libexec/src/net/http/server.go:2867 +0xbc
+net/http.(*conn).serve(0x140004860a0, 0x10095d920, 0x1400009a000)
+	/opt/homebrew/Cellar/go@1.16/1.16.9/libexec/src/net/http/server.go:1932 +0x710
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go@1.16/1.16.9/libexec/src/net/http/server.go:2993 +0x308
+[qSkipTool]2021/10/27 11:53:33 GoodsForOmoCourseControllor.go:20: GoodsForOmoCourseControllor log
+time="2021-10-27T19:53:33+08:00" level=info msg="GoodsForOmoCourseControllor logrus"
+[qSkipTool]2021/10/27 11:53:33 server.go:3119: http: panic serving 127.0.0.1:54042: runtime error: invalid memory address or nil pointer dereference
+goroutine 26 [running]:
+net/http.(*conn).serve.func1(0x14000442000)
+	/opt/homebrew/Cellar/go@1.16/1.16.9/libexec/src/net/http/server.go:1804 +0x108
+panic(0x100870b20, 0x100d6fcb0)
+	/opt/homebrew/Cellar/go@1.16/1.16.9/libexec/src/runtime/panic.go:971 +0x3f4
+mygo/Lib/MiddleWares/Global.SetUp.func1(0x140001ca000)
+	/Users/xizhanbo/data/go/mygo/Lib/MiddleWares/Global/logger.go:60 +0xad8
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/xizhanbo/data/go/mygo/vendor/github.com/gin-gonic/gin/context.go:165
+mygo/Lib/MiddleWares/Global.CommonMiddleWare.func1(0x140001ca000)
+	/Users/xizhanbo/data/go/mygo/Lib/MiddleWares/Global/Common.go:11 +0x94
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/xizhanbo/data/go/mygo/vendor/github.com/gin-gonic/gin/context.go:165
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0x1400048c000, 0x140001ca000)
+	/Users/xizhanbo/data/go/mygo/vendor/github.com/gin-gonic/gin/gin.go:489 +0x1ec
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0x1400048c000, 0x10095b490, 0x140003b8000, 0x140000a2100)
+	/Users/xizhanbo/data/go/mygo/vendor/github.com/gin-gonic/gin/gin.go:445 +0x10c
+net/http.serverHandler.ServeHTTP(0x1400048a0e0, 0x10095b490, 0x140003b8000, 0x140000a2100)
+	/opt/homebrew/Cellar/go@1.16/1.16.9/libexec/src/net/http/server.go:2867 +0xbc
+net/http.(*conn).serve(0x14000442000, 0x10095d920, 0x14000032040)
+	/opt/homebrew/Cellar/go@1.16/1.16.9/libexec/src/net/http/server.go:1932 +0x710
+created by net/http.(*Server).Serve
+	/opt/homebrew/Cellar/go@1.16/1.16.9/libexec/src/net/http/server.go:2993 +0x308
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[qSkipTool]2021/10/27 12:08:00 GoodsForOmoCourseControllor.go:20: GoodsForOmoCourseControllor log
+time="2021-10-27T20:08:00+08:00" level=info msg="GoodsForOmoCourseControllor logrus"
+{"all_time":16996334,"client_ip":"127.0.0.1","level":"info","msg":"","req_body":null,"req_method":"POST","req_url":"/relation","status_code":400,"time":"2021-10-27 20:08:00"}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[qSkipTool]2021/10/27 12:09:53 GoodsForOmoCourseControllor.go:20: GoodsForOmoCourseControllor log
+time="2021-10-27T20:09:53+08:00" level=info msg="GoodsForOmoCourseControllor logrus"
+{"all_time":26507125,"client_ip":"127.0.0.1","level":"info","msg":"","req_body":{},"req_method":"POST","req_url":"/relation","status_code":400,"time":"2021-10-27 20:09:53"}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[qSkipTool]2021/10/27 12:12:17 GoodsForOmoCourseControllor.go:20: GoodsForOmoCourseControllor log
+time="2021-10-27T20:12:17+08:00" level=info msg="GoodsForOmoCourseControllor logrus"
+{"all_time":28818584,"client_ip":"127.0.0.1","level":"info","msg":"","req_body":"e30=","req_method":"POST","req_url":"/relation","status_code":400,"time":"2021-10-27 20:12:17"}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- index.tmpl
+	- 
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[qSkipTool]2021/10/27 12:12:54 GoodsForOmoCourseControllor.go:20: GoodsForOmoCourseControllor log
+time="2021-10-27T20:12:54+08:00" level=info msg="GoodsForOmoCourseControllor logrus"
+{"all_time":22327125,"client_ip":"127.0.0.1","level":"info","msg":"","req_body":"e30=","req_method":"POST","req_url":"/relation","status_code":400,"time":"2021-10-27 20:12:54"}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[qSkipTool]2021/10/27 12:14:18 GoodsForOmoCourseControllor.go:20: GoodsForOmoCourseControllor log
+time="2021-10-27T20:14:18+08:00" level=info msg="GoodsForOmoCourseControllor logrus"
+{"all_time":30933875,"client_ip":"127.0.0.1","level":"info","msg":"","req_body":"e30=","req_method":"POST","req_url":"/relation","status_code":400,"time":"2021-10-27 20:14:18"}

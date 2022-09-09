@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package services;
+
+option go_package="../services;services"; //分号之前是路径，分号之后是生成的文件中package 包名
+
+message RequestMessage {
+    int32 id=1;
+}
+
+message ResponseMessage {
+    string name=1;
+}
+
+service User {
+    rpc SayHello(RequestMessage) returns (ResponseMessage);
+}
