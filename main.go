@@ -7,12 +7,13 @@ import (
 
 func main() {
 	var wg sync.WaitGroup
-	wg.Add(3)
+
 	for _, salutation := range []string{"hello", "greetings", "good day"} {
+		wg.Add(1)
 		go func(str string) {
 			defer wg.Done()
 			fmt.Println(str)
 		}(salutation)
 	}
-	wg.Done()
+	wg.Wait()
 }
