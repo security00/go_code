@@ -11,3 +11,7 @@ Simple go code
     go get github.com/go-xorm/xorm
     xorm/xorm reverse mysql root:123456@tcp\(127.0.0.1:3308\)/test?charset=utf8 xorm/templates/goxorm Entities/Databases/
     注意：xorm方式不支持unsigned,可以修改测试环境字段类型后执行
+
+# 测试grpc gin
+    GODEBUG=x509ignoreCN=0 go run grpc-test.go
+    GODEBUG=x509ignoreCN=0 go run https-test.go
