@@ -1,0 +1,9 @@
+kind: reverse
+name: mydb
+source:
+  database: mysql
+  conn_str: 'root:123456@tcp(127.0.0.1:3308)/test?parseTime=true'
+targets:
+  - type: codes
+    language: golang
+    output_dir: ./Entities/DataBases
