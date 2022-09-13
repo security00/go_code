@@ -2,7 +2,6 @@ package Controller
 
 import (
 	"github.com/gin-gonic/gin"
-	//. "mygo/models"
 )
 
 type GoodsForOmoCourseControllor struct {
