@@ -99,31 +99,33 @@ type Context struct {
 // Handler describes tag handler for XORM
 type Handler func(ctx *Context) error
 
-// defaultTagHandlers enumerates all the default tag handler
-var defaultTagHandlers = map[string]Handler{
-	"-":        IgnoreHandler,
-	"<-":       OnlyFromDBTagHandler,
-	"->":       OnlyToDBTagHandler,
-	"PK":       PKTagHandler,
-	"NULL":     NULLTagHandler,
-	"NOT":      NotTagHandler,
-	"AUTOINCR": AutoIncrTagHandler,
-	"DEFAULT":  DefaultTagHandler,
-	"CREATED":  CreatedTagHandler,
-	"UPDATED":  UpdatedTagHandler,
-	"DELETED":  DeletedTagHandler,
-	"VERSION":  VersionTagHandler,
-	"UTC":      UTCTagHandler,
-	"LOCAL":    LocalTagHandler,
-	"NOTNULL":  NotNullTagHandler,
-	"INDEX":    IndexTagHandler,
-	"UNIQUE":   UniqueTagHandler,
-	"CACHE":    CacheTagHandler,
-	"NOCACHE":  NoCacheTagHandler,
-	"COMMENT":  CommentTagHandler,
-	"EXTENDS":  ExtendsTagHandler,
-	"UNSIGNED": UnsignedTagHandler,
-}
+var (
+	// defaultTagHandlers enumerates all the default tag handler
+	defaultTagHandlers = map[string]Handler{
+		"-":        IgnoreHandler,
+		"<-":       OnlyFromDBTagHandler,
+		"->":       OnlyToDBTagHandler,
+		"PK":       PKTagHandler,
+		"NULL":     NULLTagHandler,
+		"NOT":      NotTagHandler,
+		"AUTOINCR": AutoIncrTagHandler,
+		"DEFAULT":  DefaultTagHandler,
+		"CREATED":  CreatedTagHandler,
+		"UPDATED":  UpdatedTagHandler,
+		"DELETED":  DeletedTagHandler,
+		"VERSION":  VersionTagHandler,
+		"UTC":      UTCTagHandler,
+		"LOCAL":    LocalTagHandler,
+		"NOTNULL":  NotNullTagHandler,
+		"INDEX":    IndexTagHandler,
+		"UNIQUE":   UniqueTagHandler,
+		"CACHE":    CacheTagHandler,
+		"NOCACHE":  NoCacheTagHandler,
+		"COMMENT":  CommentTagHandler,
+		"EXTENDS":  ExtendsTagHandler,
+		"UNSIGNED": UnsignedTagHandler,
+	}
+)
 
 func init() {
 	for k := range schemas.SqlTypes {
@@ -310,16 +312,16 @@ func SQLTypeTagHandler(ctx *Context) error {
 	default:
 		var err error
 		if len(ctx.params) == 2 {
-			ctx.col.Length, err = strconv.ParseInt(ctx.params[0], 10, 64)
+			ctx.col.Length, err = strconv.Atoi(ctx.params[0])
 			if err != nil {
 				return err
 			}
-			ctx.col.Length2, err = strconv.ParseInt(ctx.params[1], 10, 64)
+			ctx.col.Length2, err = strconv.Atoi(ctx.params[1])
 			if err != nil {
 				return err
 			}
 		} else if len(ctx.params) == 1 {
-			ctx.col.Length, err = strconv.ParseInt(ctx.params[0], 10, 64)
+			ctx.col.Length, err = strconv.Atoi(ctx.params[0])
 			if err != nil {
 				return err
 			}
@@ -330,8 +332,8 @@ func SQLTypeTagHandler(ctx *Context) error {
 
 // ExtendsTagHandler describes extends tag handler
 func ExtendsTagHandler(ctx *Context) error {
-	fieldValue := ctx.fieldValue
-	isPtr := false
+	var fieldValue = ctx.fieldValue
+	var isPtr = false
 	switch fieldValue.Kind() {
 	case reflect.Ptr:
 		f := fieldValue.Type().Elem()
@@ -353,7 +355,7 @@ func ExtendsTagHandler(ctx *Context) error {
 			col.FieldName = fmt.Sprintf("%v.%v", ctx.col.FieldName, col.FieldName)
 			col.FieldIndex = append(ctx.col.FieldIndex, col.FieldIndex...)
 
-			tagPrefix := ctx.col.FieldName
+			var tagPrefix = ctx.col.FieldName
 			if len(ctx.params) > 0 {
 				col.Nullable = isPtr
 				tagPrefix = strings.Trim(ctx.params[0], "'")
@@ -376,7 +378,7 @@ func ExtendsTagHandler(ctx *Context) error {
 			}
 		}
 	default:
-		// TODO: warning
+		//TODO: warning
 	}
 	return ErrIgnoreField
 }

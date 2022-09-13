@@ -1,0 +1,30 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] GET    /username                 --> mygo/Controller.(*IndexController).UserName-fm (3 handlers)
+[GIN-debug] GET    /insert_role              --> mygo/Controller.(*RoleController).WriteData-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- index.tmpl
+	- 
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/favicon.ico","status_code":404},"response":"","time":"2022-09-13 17:27:34"}
+{"level":"info","msg":"","request":{"all_time":28677500,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/insert_role","status_code":200},"response":"{\"Msg\":\"successful\"}","time":"2022-09-13 17:28:13"}
+{"level":"info","msg":"","request":{"all_time":3167,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/favicon.ico","status_code":404},"response":"","time":"2022-09-13 17:28:14"}
+{"level":"info","msg":"","request":{"all_time":98819625,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/insert_role","status_code":200},"response":"{\"Msg\":\"successful\"}","time":"2022-09-13 17:28:15"}
+{"level":"info","msg":"","request":{"all_time":4083,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/favicon.ico","status_code":404},"response":"","time":"2022-09-13 17:28:15"}
+{"level":"info","msg":"","request":{"all_time":48324417,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/insert_role","status_code":200},"response":"{\"Msg\":\"successful\"}","time":"2022-09-13 17:28:16"}
+{"level":"info","msg":"","request":{"all_time":2834,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/favicon.ico","status_code":404},"response":"","time":"2022-09-13 17:28:16"}

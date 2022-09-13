@@ -229,7 +229,7 @@ func (db *mssql) Init(uri *URI) error {
 func (db *mssql) SetParams(params map[string]string) {
 	defaultVarchar, ok := params["DEFAULT_VARCHAR"]
 	if ok {
-		t := strings.ToUpper(defaultVarchar)
+		var t = strings.ToUpper(defaultVarchar)
 		switch t {
 		case "NVARCHAR", "VARCHAR":
 			db.defaultVarchar = t
@@ -242,7 +242,7 @@ func (db *mssql) SetParams(params map[string]string) {
 
 	defaultChar, ok := params["DEFAULT_CHAR"]
 	if ok {
-		t := strings.ToUpper(defaultChar)
+		var t = strings.ToUpper(defaultChar)
 		switch t {
 		case "NCHAR", "CHAR":
 			db.defaultChar = t
@@ -280,12 +280,6 @@ func (db *mssql) Version(ctx context.Context, queryer core.Queryer) (*schemas.Ve
 		Level:   level,
 		Edition: edition,
 	}, nil
-}
-
-func (db *mssql) Features() *DialectFeatures {
-	return &DialectFeatures{
-		AutoincrMode: IncrAutoincrMode,
-	}
 }
 
 func (db *mssql) SQLType(c *schemas.Column) string {
@@ -375,9 +369,9 @@ func (db *mssql) SQLType(c *schemas.Column) string {
 	hasLen2 := (c.Length2 > 0)
 
 	if hasLen2 {
-		res += "(" + strconv.FormatInt(c.Length, 10) + "," + strconv.FormatInt(c.Length2, 10) + ")"
+		res += "(" + strconv.Itoa(c.Length) + "," + strconv.Itoa(c.Length2) + ")"
 	} else if hasLen1 {
-		res += "(" + strconv.FormatInt(c.Length, 10) + ")"
+		res += "(" + strconv.Itoa(c.Length) + ")"
 	}
 	return res
 }
@@ -403,11 +397,11 @@ func (db *mssql) IsReserved(name string) bool {
 func (db *mssql) SetQuotePolicy(quotePolicy QuotePolicy) {
 	switch quotePolicy {
 	case QuotePolicyNone:
-		q := mssqlQuoter
+		var q = mssqlQuoter
 		q.IsReserved = schemas.AlwaysNoReserve
 		db.quoter = q
 	case QuotePolicyReserved:
-		q := mssqlQuoter
+		var q = mssqlQuoter
 		q.IsReserved = db.IsReserved
 		db.quoter = q
 	case QuotePolicyAlways:
@@ -429,7 +423,7 @@ func (db *mssql) DropTableSQL(tableName string) (string, bool) {
 
 func (db *mssql) ModifyColumnSQL(tableName string, col *schemas.Column) string {
 	s, _ := ColumnString(db.dialect, col, false)
-	return fmt.Sprintf("ALTER TABLE %s ALTER COLUMN %s", db.quoter.Quote(tableName), s)
+	return fmt.Sprintf("ALTER TABLE %s ALTER COLUMN %s", tableName, s)
 }
 
 func (db *mssql) IndexCheckSQL(tableName, idxName string) (string, []interface{}) {
@@ -475,7 +469,7 @@ func (db *mssql) GetColumns(queryer core.Queryer, ctx context.Context, tableName
 	colSeq := make([]string, 0)
 	for rows.Next() {
 		var name, ctype, vdefault string
-		var maxLen, precision, scale int64
+		var maxLen, precision, scale int
 		var nullable, isPK, defaultIsNull, isIncrement bool
 		err = rows.Scan(&name, &ctype, &maxLen, &precision, &scale, &nullable, &defaultIsNull, &vdefault, &isPK, &isIncrement)
 		if err != nil {
@@ -631,7 +625,7 @@ WHERE IXS.TYPE_DESC='NONCLUSTERED' and OBJECT_NAME(IXS.OBJECT_ID) =?
 	return indexes, nil
 }
 
-func (db *mssql) CreateTableSQL(ctx context.Context, queryer core.Queryer, table *schemas.Table, tableName string) (string, bool, error) {
+func (db *mssql) CreateTableSQL(table *schemas.Table, tableName string) ([]string, bool) {
 	if tableName == "" {
 		tableName = table.Name
 	}
@@ -662,7 +656,7 @@ func (db *mssql) CreateTableSQL(ctx context.Context, queryer core.Queryer, table
 
 	b.WriteString(")")
 
-	return b.String(), true, nil
+	return []string{b.String()}, true
 }
 
 func (db *mssql) ForUpdateSQL(query string) string {
