@@ -23,7 +23,7 @@ func FormatColumnTime(dialect Dialect, dbLocation *time.Location, col *schemas.C
 		}
 	}
 
-	tmZone := dbLocation
+	var tmZone = dbLocation
 	if col.TimeZone != nil {
 		tmZone = col.TimeZone
 	}
@@ -34,17 +34,15 @@ func FormatColumnTime(dialect Dialect, dbLocation *time.Location, col *schemas.C
 	case schemas.Date:
 		return t.Format("2006-01-02"), nil
 	case schemas.Time:
-		layout := "15:04:05"
+		var layout = "15:04:05"
 		if col.Length > 0 {
-			// we can use int(...) casting here as it's very unlikely to a huge sized field
-			layout += "." + strings.Repeat("0", int(col.Length))
+			layout += "." + strings.Repeat("0", col.Length)
 		}
 		return t.Format(layout), nil
 	case schemas.DateTime, schemas.TimeStamp:
-		layout := "2006-01-02 15:04:05"
+		var layout = "2006-01-02 15:04:05"
 		if col.Length > 0 {
-			// we can use int(...) casting here as it's very unlikely to a huge sized field
-			layout += "." + strings.Repeat("0", int(col.Length))
+			layout += "." + strings.Repeat("0", col.Length)
 		}
 		return t.Format(layout), nil
 	case schemas.Varchar:

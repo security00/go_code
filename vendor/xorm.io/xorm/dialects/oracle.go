@@ -539,12 +539,6 @@ func (db *oracle) Version(ctx context.Context, queryer core.Queryer) (*schemas.V
 	}, nil
 }
 
-func (db *oracle) Features() *DialectFeatures {
-	return &DialectFeatures{
-		AutoincrMode: SequenceAutoincrMode,
-	}
-}
-
 func (db *oracle) SQLType(c *schemas.Column) string {
 	var res string
 	switch t := c.SQLType.Name; t {
@@ -570,9 +564,9 @@ func (db *oracle) SQLType(c *schemas.Column) string {
 	hasLen2 := (c.Length2 > 0)
 
 	if hasLen2 {
-		res += "(" + strconv.FormatInt(c.Length, 10) + "," + strconv.FormatInt(c.Length2, 10) + ")"
+		res += "(" + strconv.Itoa(c.Length) + "," + strconv.Itoa(c.Length2) + ")"
 	} else if hasLen1 {
-		res += "(" + strconv.FormatInt(c.Length, 10) + ")"
+		res += "(" + strconv.Itoa(c.Length) + ")"
 	}
 	return res
 }
@@ -605,8 +599,8 @@ func (db *oracle) DropTableSQL(tableName string) (string, bool) {
 	return fmt.Sprintf("DROP TABLE `%s`", tableName), false
 }
 
-func (db *oracle) CreateTableSQL(ctx context.Context, queryer core.Queryer, table *schemas.Table, tableName string) (string, bool, error) {
-	sql := "CREATE TABLE "
+func (db *oracle) CreateTableSQL(table *schemas.Table, tableName string) ([]string, bool) {
+	var sql = "CREATE TABLE "
 	if tableName == "" {
 		tableName = table.Name
 	}
@@ -635,17 +629,17 @@ func (db *oracle) CreateTableSQL(ctx context.Context, queryer core.Queryer, tabl
 	}
 
 	sql = sql[:len(sql)-2] + ")"
-	return sql, false, nil
+	return []string{sql}, false
 }
 
 func (db *oracle) SetQuotePolicy(quotePolicy QuotePolicy) {
 	switch quotePolicy {
 	case QuotePolicyNone:
-		q := oracleQuoter
+		var q = oracleQuoter
 		q.IsReserved = schemas.AlwaysNoReserve
 		db.quoter = q
 	case QuotePolicyReserved:
-		q := oracleQuoter
+		var q = oracleQuoter
 		q.IsReserved = db.IsReserved
 		db.quoter = q
 	case QuotePolicyAlways:
@@ -690,7 +684,7 @@ func (db *oracle) GetColumns(queryer core.Queryer, ctx context.Context, tableNam
 		col.Indexes = make(map[string]int)
 
 		var colName, colDefault, nullable, dataType, dataPrecision, dataScale *string
-		var dataLen int64
+		var dataLen int
 
 		err = rows.Scan(&colName, &colDefault, &dataType, &dataLen, &dataPrecision,
 			&dataScale, &nullable)
@@ -713,16 +707,16 @@ func (db *oracle) GetColumns(queryer core.Queryer, ctx context.Context, tableNam
 		var ignore bool
 
 		var dt string
-		var len1, len2 int64
+		var len1, len2 int
 		dts := strings.Split(*dataType, "(")
 		dt = dts[0]
 		if len(dts) > 1 {
 			lens := strings.Split(dts[1][:len(dts[1])-1], ",")
 			if len(lens) > 1 {
-				len1, _ = strconv.ParseInt(lens[0], 10, 64)
-				len2, _ = strconv.ParseInt(lens[1], 10, 64)
+				len1, _ = strconv.Atoi(lens[0])
+				len2, _ = strconv.Atoi(lens[1])
 			} else {
-				len1, _ = strconv.ParseInt(lens[0], 10, 64)
+				len1, _ = strconv.Atoi(lens[0])
 			}
 		}
 
