@@ -1,0 +1,375 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] GET    /username                 --> mygo/Controller.(*IndexController).UserName-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] GET    /username                 --> mygo/Controller.(*IndexController).UserName-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":21504916,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 13:41:39"}
+{"level":"info","msg":"","request":{"all_time":3209,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/favicon.ico","status_code":404},"response":"","time":"2022-09-13 13:41:40"}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] GET    /username                 --> mygo/Controller.(*IndexController).UserName-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":15828333,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 13:43:13"}
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":5558833,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 13:43:17"}
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":4686500,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 13:43:18"}
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":5108375,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 13:43:30"}
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":4550709,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 13:43:34"}
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":4524625,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 13:43:35"}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] GET    /username                 --> mygo/Controller.(*IndexController).UserName-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":13554708,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 13:46:33"}
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":4366916,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 13:46:36"}
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":4317334,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 13:46:43"}
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":4271666,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 13:46:44"}
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":4174333,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 13:46:45"}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] GET    /username                 --> mygo/Controller.(*IndexController).UserName-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":16960708,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 13:47:57"}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] GET    /username                 --> mygo/Controller.(*IndexController).UserName-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":12701875,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 13:48:19"}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] GET    /username                 --> mygo/Controller.(*IndexController).UserName-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":14189791,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 13:49:01"}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] GET    /username                 --> mygo/Controller.(*IndexController).UserName-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":13516208,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 13:49:26"}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] GET    /username                 --> mygo/Controller.(*IndexController).UserName-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":16335083,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 13:50:54"}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] GET    /username                 --> mygo/Controller.(*IndexController).UserName-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":15972958,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"111\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 13:51:52"}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] GET    /username                 --> mygo/Controller.(*IndexController).UserName-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":13544291,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"111\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 13:53:06"}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] GET    /username                 --> mygo/Controller.(*IndexController).UserName-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":19593458,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"111\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 13:55:10"}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] GET    /username                 --> mygo/Controller.(*IndexController).UserName-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":18448625,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 13:59:09"}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] GET    /username                 --> mygo/Controller.(*IndexController).UserName-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":21945500,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 14:00:07"}
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":19991833,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 14:00:12"}
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":7203666,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 14:00:13"}
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":5719750,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 14:00:13"}
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":5026750,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 14:00:13"}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] GET    /username                 --> mygo/Controller.(*IndexController).UserName-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":13686375,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 14:01:01"}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] GET    /username                 --> mygo/Controller.(*IndexController).UserName-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":15966167,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 14:01:28"}
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":4467167,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 14:01:32"}
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":4260208,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 14:01:34"}
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":4644541,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 14:01:35"}
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":4290250,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 14:01:35"}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /goods                    --> mygo/Controller/Goods.(*GoodsController).Index-fm (4 handlers)
+[GIN-debug] POST   /relation                 --> mygo/Controller.(*GoodsForOmoCourseControllor).Insert-fm (3 handlers)
+[GIN-debug] GET    /order                    --> mygo/Controller/Orders.(*OrdersController).Index-fm (3 handlers)
+[GIN-debug] GET    /index                    --> mygo/Controller.(*IndexController).Index-fm (3 handlers)
+[GIN-debug] GET    /reponse_struct           --> mygo/Controller.(*IndexController).ResponseStruct-fm (3 handlers)
+[GIN-debug] GET    /reponse_xml              --> mygo/Controller.(*IndexController).ResponseXml-fm (3 handlers)
+[GIN-debug] GET    /reponse_yaml             --> mygo/Controller.(*IndexController).ResponseYaml-fm (3 handlers)
+[GIN-debug] GET    /username                 --> mygo/Controller.(*IndexController).UserName-fm (3 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- index.tmpl
+	- 
+
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":28336875,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"111\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 14:12:00"}
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 400
+{"level":"info","msg":"","request":{"all_time":4778292,"client_ip":"127.0.0.1","req_data":"","req_method":"GET","req_url":"/username?id=1","status_code":200},"response":"{\"Name\":\"111\",\"Message\":\"获取数据成功\",\"Code\":1000}","time":"2022-09-13 14:12:02"}

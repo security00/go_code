@@ -3,7 +3,9 @@ package Controller
 import (
 	"github.com/gin-gonic/gin"
 	"mygo/Entities/Requests"
+	"mygo/models"
 	"net/http"
+	"strconv"
 )
 
 type IndexController struct {
@@ -39,6 +41,24 @@ func (i *IndexController) ResponseYaml(c *gin.Context) {
 }
 
 func (i *IndexController) UserName(c *gin.Context) {
-	//id := c.GetInt("id")
+	var msg struct {
+		Name    string
+		Message string
+		Code    int
+	}
+	t := c.Query("id")
+	id, _ := strconv.ParseInt(t, 10, 64)
+	u := new(models.User)
+	name, err := u.GetName(id)
+	if err != nil {
+		msg.Name = ""
+		msg.Message = "获取数据失败"
+		msg.Code = -1000
+		c.JSON(200, msg)
+	}
 
+	msg.Name = name
+	msg.Message = "获取数据成功"
+	msg.Code = 1000
+	c.JSON(200, msg)
 }
