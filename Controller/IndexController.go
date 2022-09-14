@@ -63,7 +63,3 @@ func (i *IndexController) UserName(c *gin.Context) {
 	msg.Code = 1000
 	c.JSON(200, msg)
 }
-
-func (i *IndexController) rbmq() {
-
-}

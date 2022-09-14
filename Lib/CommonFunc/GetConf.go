@@ -4,15 +4,33 @@ import (
 	"fmt"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
+	"log"
 	"os"
 )
 
-type Settings struct {
-	APP_NAME string `yaml:"APP_NAME"`
-	LOG_DIR  string `yaml:"LOG_DIR"`
+type HTTP struct {
+	Port string `yaml:"port"`
+	Host string `yaml:"host"`
 }
 
-var conf = Settings{}
+type MQ struct {
+	Host     string `yaml:"host"`
+	Username string `yaml:"username"`
+	Password string `yaml:"password"`
+}
+
+type conf struct {
+	LOGPATH string   `yaml:"log-path"`
+	User    []string `yaml:"user"`
+	MQTT    MQ       `yaml:"mqtt"`
+	Http    HTTP     `yaml:"http"`
+}
+
+type Config struct {
+	conf conf `yaml:"config"`
+}
+
+var AppConf Config
 
 func init() {
 	env := os.Getenv("MYGOENV")
@@ -20,14 +38,22 @@ func init() {
 	if err != nil {
 		panic("get config file err:" + err.Error())
 	}
-	err = yaml.Unmarshal(yamlFile, &conf)
+	//fmt.Println(string(yamlFile))
+	err = yaml.Unmarshal(yamlFile, AppConf)
 	if err != nil {
-		panic("get config file err:" + err.Error())
+		fmt.Println(err.Error())
 	}
-	result := fmt.Sprintf("%+v", conf)
-	fmt.Println(result)
+	result := fmt.Sprintf("%+v", &AppConf)
+	log.Fatalf("AppConf:", result)
+
+	//yamlFile, err := os.Open("Configs/" + env + ".yaml")
+	//if err != nil {
+	//	panic("get config file err:" + err.Error())
+	//}
+	//yaml.NewDecoder(yamlFile).Decode(AppConf)
+	//log.Fatalf("conf: ", AppConf)
 }
 
-func Conf() Settings {
-	return conf
+func Conf() conf {
+	return AppConf.conf
 }

@@ -1,2 +1,15 @@
-APP_NAME: testName
-LOG_DIR: Logs/
+config:
+  user:
+    - Tom
+    - Lily
+    - Skay
+  mqtt:
+    host: localhost:1883
+    username: test
+    password: test
+
+  http:
+    host: 127.0.0.1
+    port: "8080"
+
+  log-path: Logs
