@@ -23,6 +23,7 @@ require (
 	github.com/mattn/go-sqlite3 v1.14.9
 	github.com/robfig/cron/v3 v3.0.0
 	github.com/sirupsen/logrus v1.8.1
+	github.com/streadway/amqp v1.0.0
 	github.com/tealeg/xlsx v1.0.5 // indirect
 	github.com/ugorji/go v1.2.6 // indirect
 	github.com/xormplus/builder v0.0.0-20200331055651-240ff40009be // indirect

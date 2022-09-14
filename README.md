@@ -15,3 +15,14 @@ Simple go code
 # 测试grpc gin
     GODEBUG=x509ignoreCN=0 go run grpc-test.go
     GODEBUG=x509ignoreCN=0 go run https-test.go
+
+# rabbitmq
+    docker run -d --hostname my-rabbit --name rabbitmq -p 15672:15672 -p 5672:5672 -p 25672:25672 -e RABBITMQ_DEFAULT_USER=rbmq -e RABBITMQ_DEFAULT_PASS=rbmq rabbitmq:3-management
+    5672：连接生产者、消费者的端口。 
+    15672：WEB管理页面的端口。
+    25672：分布式集群的端口。
+
+# mysql
+    docker run --name mysql -d -p 3306:3306 -v /Users/missyourlove/docker_data/mysql/data:/var/lib/mysql \
+    -v /Users/missyourlove/docker_data/mysql/conf/my.cnf:/etc/my.cnf \
+    -e MYSQL_ROOT_PASSWORD=密码 mysql

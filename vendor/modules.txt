@@ -99,6 +99,9 @@ github.com/robfig/cron/v3
 # github.com/sirupsen/logrus v1.8.1
 ## explicit
 github.com/sirupsen/logrus
+# github.com/streadway/amqp v1.0.0
+## explicit
+github.com/streadway/amqp
 # github.com/syndtr/goleveldb v1.0.0
 github.com/syndtr/goleveldb/leveldb
 github.com/syndtr/goleveldb/leveldb/cache
