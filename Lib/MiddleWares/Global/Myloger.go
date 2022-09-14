@@ -44,7 +44,7 @@ func Myloger() gin.HandlerFunc {
 
 	return func(c *gin.Context) {
 		defer func() {
-			if panicErr := recover(); panicErr!=nil{
+			if panicErr := recover(); panicErr != nil {
 				logrus.Error(string(debug.Stack()))
 				logrus.Error(panicErr)
 			}
@@ -55,7 +55,7 @@ func Myloger() gin.HandlerFunc {
 
 		startTime := time.Now()
 
-		data,_ := c.GetRawData() //从post中取出参数
+		data, _ := c.GetRawData() //从post中取出参数
 
 		c.Request.Body = ioutil.NopCloser(bytes.NewReader(data)) //由于gin框架body中的数据只能取出一次，所以取出后再放回去
 
@@ -82,7 +82,7 @@ func Myloger() gin.HandlerFunc {
 		c.BindJSON(&reqDataMap)
 		reqDataByte, _ := json.Marshal(reqDataMap)
 
-		fmt.Println("===========",string(reqDataByte),"===========")
+		fmt.Println("===========", string(reqDataByte), "===========")
 
 		// 换一下日期格式
 		Logger.SetFormatter(&logrus.TextFormatter{

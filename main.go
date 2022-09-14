@@ -8,6 +8,7 @@ import (
 	"google.golang.org/grpc/credentials"
 	"io/ioutil"
 	_ "mygo/Configs"
+	"mygo/Lib/Crontabs"
 	"mygo/Lib/Routers"
 	"mygo/Lib/Routers/Common"
 	"mygo/Lib/Routers/Goods"
@@ -25,6 +26,7 @@ var (
 )
 
 func main() {
+	go Crontabs.Init()
 	initHttpsServer()
 	initGrpcServer()
 	initCreds()

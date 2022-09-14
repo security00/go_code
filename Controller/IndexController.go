@@ -55,6 +55,7 @@ func (i *IndexController) UserName(c *gin.Context) {
 		msg.Message = "获取数据失败"
 		msg.Code = -1000
 		c.JSON(200, msg)
+		return
 	}
 
 	msg.Name = name
