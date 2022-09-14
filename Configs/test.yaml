@@ -1,15 +1,16 @@
-config:
-  user:
-    - Tom
-    - Lily
-    - Skay
-  mqtt:
-    host: localhost:1883
-    username: test
-    password: test
+user:
+  - Tom
+  - Lily
+  - Skay
+mqtt:
+  host: localhost:1883
+  username: test
+  password: test
 
-  http:
-    host: 127.0.0.1
-    port: "8080"
+http:
+  host: 127.0.0.1
+  port: "8080"
 
-  log-path: Logs
+log-path: Logs
+
+https: {port: "83333", host: "127.0.0.1"}

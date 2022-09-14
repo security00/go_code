@@ -9,10 +9,13 @@ import (
 )
 
 type HTTP struct {
+	Host string `yaml:"host"`
+	Port string `yaml:"port"`
+}
+type HTTPS struct {
 	Port string `yaml:"port"`
 	Host string `yaml:"host"`
 }
-
 type MQ struct {
 	Host     string `yaml:"host"`
 	Username string `yaml:"username"`
@@ -20,17 +23,14 @@ type MQ struct {
 }
 
 type conf struct {
-	LOGPATH string   `yaml:"log-path"`
 	User    []string `yaml:"user"`
 	MQTT    MQ       `yaml:"mqtt"`
 	Http    HTTP     `yaml:"http"`
+	Https   HTTPS    `yaml:"https"`
+	LOGPATH string   `yaml:"log-path"`
 }
 
-type Config struct {
-	conf conf `yaml:"config"`
-}
-
-var AppConf Config
+var AppConf = new(conf)
 
 func init() {
 	env := os.Getenv("MYGOENV")
@@ -43,17 +43,12 @@ func init() {
 	if err != nil {
 		fmt.Println(err.Error())
 	}
-	result := fmt.Sprintf("%+v", &AppConf)
-	log.Fatalf("AppConf:", result)
+	//fmt.Println(AppConf)
+	//result := fmt.Sprintf("%+v", AppConf)
+	log.Fatalf("AppConf:", AppConf.Https.Port)
 
-	//yamlFile, err := os.Open("Configs/" + env + ".yaml")
-	//if err != nil {
-	//	panic("get config file err:" + err.Error())
-	//}
-	//yaml.NewDecoder(yamlFile).Decode(AppConf)
-	//log.Fatalf("conf: ", AppConf)
 }
 
 func Conf() conf {
-	return AppConf.conf
+	return *AppConf
 }
