@@ -2,16 +2,23 @@ package Rbmq
 
 import (
 	"encoding/json"
+	"fmt"
 	"github.com/streadway/amqp"
 	"log"
+	"mygo/Lib/CommonFunc"
 )
 
-var url = "amqp://rbmq:rbmq@127.0.0.1:5672/"
+var url string
 var exchange = "project"
 var queue = "pj_event"
 var routing_key = "pj_event"
 var content = map[string]interface{}{
 	"name": "zelda",
+}
+
+func init() {
+	mqConf := CommonFunc.Conf().MQTT
+	url = fmt.Sprintf("amqp://%s:%s@%s/", mqConf.Username, mqConf.Password, mqConf.Host)
 }
 
 // 生产者

@@ -19,6 +19,7 @@ func init() {
 	initMysql()
 }
 func initMysql() {
+	var mysqlConn = CommonFunc.Conf().Mysql
 	var err error
 	Eg, err = xorm.NewEngineGroup("mysql", mysqlConn, xorm.RandomPolicy())
 	if err != nil {
@@ -28,15 +29,6 @@ func initMysql() {
 	Eg.SetMaxOpenConns(25)
 }
 
-//func initMysql() {
-//	var err error
-//	Eg, err = xorm.NewEngine("mysql", mysqlConn[0])
-//	if err != nil {
-//		fmt.Println("init mysql err:", err.Error())
-//	}
-//	Eg.SetMaxOpenConns(20)
-//	Eg.Ping()
-//}
 func initLog() {
 	fmt.Println("main init")
 	gin.SetMode(gin.DebugMode)

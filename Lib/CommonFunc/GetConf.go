@@ -4,14 +4,9 @@ import (
 	"fmt"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
-	"log"
 	"os"
 )
 
-type HTTP struct {
-	Host string `yaml:"host"`
-	Port string `yaml:"port"`
-}
 type HTTPS struct {
 	Port string `yaml:"port"`
 	Host string `yaml:"host"`
@@ -23,9 +18,8 @@ type MQ struct {
 }
 
 type conf struct {
-	User    []string `yaml:"user"`
+	Mysql   []string `yaml:"mysql"`
 	MQTT    MQ       `yaml:"mqtt"`
-	Http    HTTP     `yaml:"http"`
 	Https   HTTPS    `yaml:"https"`
 	LOGPATH string   `yaml:"log-path"`
 }
@@ -38,14 +32,12 @@ func init() {
 	if err != nil {
 		panic("get config file err:" + err.Error())
 	}
-	//fmt.Println(string(yamlFile))
 	err = yaml.Unmarshal(yamlFile, AppConf)
 	if err != nil {
 		fmt.Println(err.Error())
 	}
-	//fmt.Println(AppConf)
 	//result := fmt.Sprintf("%+v", AppConf)
-	log.Fatalf("AppConf:", AppConf.Https.Port)
+	//log.Fatalf("AppConf:", AppConf.Mysql)
 
 }
 
